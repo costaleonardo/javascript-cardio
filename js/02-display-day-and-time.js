@@ -8,20 +8,15 @@
 */
 
 const displayTimeAndDate = () => {
-  // Initialize Date
-  const date = new Date();
+  const date = new Date();   // Initialize Date
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sunday'];
-  // Get day of the week
-  const day = days[date.getDay()];
-  // Get current hour
-  const hour = date.getHours();
-  // Get current minutes
-  const minutes = date.getMinutes();
-  // Get current seconds
-  const seconds = date.getSeconds();
-  // Check for AM or PM
-  const prepand = (hour >= 12) ? 'PM' : 'AM';
+  const day = days[date.getDay()];   // Get day of the week
+  const hour = date.getHours();   // Get current hour
+  const minutes = date.getMinutes();   // Get current minutes
+  const seconds = date.getSeconds();   // Get current seconds
+  const prepand = (hour >= 12) ? 'PM' : 'AM';   // Check for AM or PM
 
+  // Print current day to he console
   console.log(`Today is ${day}. Current time is ${hour}:${minutes}:${seconds} ${prepand}.`);
 }
 
