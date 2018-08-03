@@ -5,8 +5,6 @@
 
 */
 
-const printWindow = () => {
-  window.print();
-}
+const printWindow = () => window.print();
 
 printWindow();
